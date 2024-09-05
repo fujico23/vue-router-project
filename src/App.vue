@@ -1,12 +1,27 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <button @click="topPage">トップページ</button>
+    <button @click="sabPage">サブページ</button>
+    <button @click="userListPage">ユーザー一覧ページ</button>
+    <router-view></router-view>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    topPage() {
+      this.$router.push({ name: 'home' });
+    },
+    SubPage() {
+      this.$router.push({ name: 'SubPage' });
+    },
+    userListPage() {
+      this.$router.push({ name: 'UserList', query: { redirect: true } });
+    },
+  },
+};
+</script>
 
 <style>
 #app {
