@@ -11,7 +11,11 @@ function countUp(event, times) {
     <button @click="topPage">トップページ!!</button>
     <button @click="sabPage">サブページ</button>
     <button @click="userListPage">ユーザー一覧ページ</button>
-    <button @click="userListPage">ユーザー一覧ページ02</button>
+<<<<<<< HEAD
+    <button @click="userListPage">ユーザー一覧ページ!</button>
+=======
+    <button @click="userListPage">ユーザー一覧ページ</button>
+>>>>>>> main
     <router-view></router-view>
   </div>
 </template>
