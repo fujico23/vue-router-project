@@ -8,7 +8,7 @@ function countUp(event, times) {
 
 <template>
   <div id="app">
-    <button @click="topPage">トップページ</button>
+    <button @click="topPage">トップページ!!</button>
     <button @click="sabPage">サブページ</button>
     <button @click="userListPage">ユーザー一覧ページ</button>
     <router-view></router-view>
